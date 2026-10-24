@@ -1,0 +1,11 @@
+model_key,model_id,condition,error_type,failed_attempts
+gemini-flash-lite,gemini-3.5-flash-lite,baseline,429 RESOURCE_EXHAUSTED,4
+gemini-flash-lite,gemini-3.5-flash-lite,parent,429 RESOURCE_EXHAUSTED,20
+gemini-flash-lite,gemini-3.5-flash-lite,ai_operator,429 RESOURCE_EXHAUSTED,20
+gemini-flash,gemini-3.6-flash,baseline,400 INVALID_ARGUMENT,5
+gemini-flash,gemini-3.6-flash,baseline,429 RESOURCE_EXHAUSTED,14
+gemini-flash,gemini-3.6-flash,parent,429 RESOURCE_EXHAUSTED,20
+gemini-flash,gemini-3.6-flash,ai_operator,429 RESOURCE_EXHAUSTED,20
+gemini-pro,gemini-3.1-pro-preview,baseline,429 RESOURCE_EXHAUSTED,22
+gemini-pro,gemini-3.1-pro-preview,parent,429 RESOURCE_EXHAUSTED,20
+gemini-pro,gemini-3.1-pro-preview,ai_operator,429 RESOURCE_EXHAUSTED,20

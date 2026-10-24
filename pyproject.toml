@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-moral-tribunal"
+version = "0.1.0"
+description = "Rescue-dilemma study of AI models' special-obligation choices. Verify the published numbers with scripts/verify_post_numbers.py (stdlib only)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Arushi Aneja" }]
+dependencies = [
+    "anthropic>=0.68.0",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "python-dotenv>=1.0",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+gemini = ["google-genai>=1.20.0"]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

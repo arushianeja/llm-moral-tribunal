@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+src/*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Raw run outputs. The rescue file contains failed-attempt rows with provider
+# error text (quota/billing wording), so it is NOT published; the cleaned
+# release in data/release/ is. Summaries/figures/release ARE committed.
+data/responses/*.jsonl
+!data/responses/.gitkeep
+!data/release/
+!data/release/**
+
+# Local tooling / scratch
+.claude/
+*.log
+scratch/
+notes/
+*.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Local data from the earlier study (not published)
+data/judged/
